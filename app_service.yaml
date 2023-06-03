@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: munsh
+  name: munsh
+spec:
+  type: NodePort
+  ports:
+    - port: 90
+      targetPort: 90
+      protocol: TCP
+  selector:
+    app: munsh
