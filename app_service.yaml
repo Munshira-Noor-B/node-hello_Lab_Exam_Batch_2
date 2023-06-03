@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: munsh
-  name: munsh
+  name: 03munsh
 spec:
   type: NodePort
   ports:
