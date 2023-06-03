@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: munsh
+  labels:
+    app: munsh
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: munsh
+  template:
+    metadata:
+      labels:
+        app: munsh
+    spec:
+      containers:
+      - name: munsh
+        image: munsh/docimg3:latest
+        ports:
+        - containerPort: 80
