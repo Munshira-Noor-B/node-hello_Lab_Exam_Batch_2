@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: munsh
+  name: 03munsh
   labels:
     app: munsh
 spec:
@@ -15,7 +15,7 @@ spec:
         app: munsh
     spec:
       containers:
-      - name: munsh
+      - name: 03munsh
         image: munsh/docimg3:latest
         ports:
         - containerPort: 80
